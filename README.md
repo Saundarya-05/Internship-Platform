@@ -1,4 +1,4 @@
-# P24 – Is This Internship Real?
+# Is This Internship Real?
 
 A beginner-friendly single Next.js App Router project containing three connected modules:
 
@@ -17,7 +17,8 @@ Next.js App Router, React, JavaScript, Tailwind CSS, MongoDB, Mongoose, Next.js 
 3. Run `npm install` in the terminal.
 4. Copy `.env.example` to `.env.local`.
 5. Add your MongoDB connection string to `MONGODB_URI`.
-6. Set a private value for `REVIEWER_KEY` (example: `p24-review-2026`, only for local classroom demo).
+6. Set your own private value for REVIEWER_KEY in the .env.local file.
+Do not share or commit your actual reviewer key.
 7. Run `npm run dev`.
 8. Open `http://localhost:3000`.
 
