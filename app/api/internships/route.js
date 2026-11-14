@@ -24,5 +24,16 @@ export async function POST(request) {
     const risk = assessRisk(parsed.data);
     const internship = await Internship.create({ ...parsed.data, ...risk });
     return NextResponse.json({ success: true, data: internship }, { status: 201 });
-  } catch (error) { return NextResponse.json({ success: false, message: "Could not create internship", error: error.message }, { status: 500 }); }
+    } catch (error) {
+    console.error("INTERNSHIP ERROR:", error);
+
+    return NextResponse.json(
+      {
+        success: false,
+        message: "Could not add internship",
+        error: error.message
+      },
+      { status: 500 }
+    );
+  }
 }
