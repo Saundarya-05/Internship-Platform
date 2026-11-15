@@ -4,6 +4,8 @@ import { connectDB } from "@/lib/db";
 import Internship from "@/models/Internship";
 import Experience from "@/models/Experience";
 
+export const dynamic = "force-dynamic";
+
 async function getCounts() {
   try {
     await connectDB();
